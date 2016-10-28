@@ -1,6 +1,6 @@
 ---
 title: CCF CSP认证
-tags:  CCF,算法,CSP,CCF CSP,CCFCSP,CCF认证,ccf,ccf csp
+tags:  CCF,CSP,CCF-CSP,CCF认证
 author: Moilk
 update: 20161028
 ---
