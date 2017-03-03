@@ -15,22 +15,23 @@ int main(void){
     sort(vec,vec+N);
 
     int mid=(N-1)/2;
-    int co=1;
+    int head;
+    int tail=head=mid;
     for(int i=mid-1;i>=0;i--){
         if(vec[i]==vec[mid]){
-            co++;
+            head--;
         }else{
             break;
         }
     }
     for(int i=mid+1;i<N;i++){
         if(vec[i]==vec[mid]){
-            co++;
+            tail++;
         }else{
             break;
         }
     }
-    if((N%2)^(co%2)){
+    if((N-1-tail)!=head){
         cout<<-1<<endl;
     }else{
         cout<<vec[mid]<<endl;
